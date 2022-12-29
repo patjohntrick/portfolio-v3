@@ -15,7 +15,7 @@ export const StyledButton = ({ buttonIcon, buttonText }: StyledButtonProps) => {
           : undefined
       }`}
     >
-      <p className="text-center text-gray-200">{buttonText}</p>
+      <p className="text-center text-gray-200 font-semibold ">{buttonText}</p>
       {buttonIcon !== undefined ? buttonIcon : undefined}
     </div>
   );
