@@ -11,7 +11,7 @@ const { NAME, JOB, BANNER_DESCRIPTION } = Strings;
 export const BannerSection = () => {
   return (
     <div className="relative h-[90vh]">
-      <StyledSection className=" absolute top-[50%] translate-y-[-50%] p-4">
+      <StyledSection className=" absolute top-[40%] translate-y-[-40%] p-4">
         <div>
           <div>
             <div className="flex justify-start items-center gap-2">

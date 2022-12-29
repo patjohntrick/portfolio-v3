@@ -5,3 +5,4 @@ export { StyledParagraph } from "./StyledParagraph";
 export { StyledSection } from "./StyledSection";
 export { StyledTitle } from "./StyledTitle";
 export { StyledSubTitle } from "./StyledSubTitle";
+export { StyledSectionTitle } from "./StyledSectionTitle";

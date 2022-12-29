@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { StyledNavigation } from "../components";
+import { AboutSection } from "./AboutSection";
 import { BannerSection } from "./BannerSection";
 
 export const Content = () => {
@@ -13,6 +14,7 @@ export const Content = () => {
     <div className="  bg-gray-50">
       <StyledNavigation toggleStatus={toggle} toggleAction={handleToggle} />
       <BannerSection />
+      <AboutSection />
     </div>
   );
 };
