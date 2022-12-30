@@ -14,7 +14,7 @@ export const Content = () => {
     console.log(toggle);
   };
   return (
-    <div className="  bg-gray-50">
+    <div className="  bg-[#FAFAFA]">
       <Head>
         <title>John Patrick Resurreccion | Front End Developer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

@@ -14,7 +14,7 @@ export const StyledSectionTitle = ({
     <div className="text-center mb-12">
       <StyledTitle
         text={title}
-        className="text-2xl font-semibold text-gray-800"
+        className="text-2xl font-semibold text-[#333333]"
       />
       <StyledSubTitle text={subTitle} className="text-black/60" />
     </div>

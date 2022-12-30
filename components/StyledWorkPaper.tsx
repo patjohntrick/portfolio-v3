@@ -15,7 +15,7 @@ export const StyledWorkPaper = ({
   projectPath,
 }: StyledWorkPaperProps) => {
   return (
-    <div className=" border-[1px] bg-white rounded-xl p-4 w-full">
+    <div className=" border-[1px] bg-white rounded-xl p-4 w-full lg:w-[320px]">
       <div className=" rounded-xl border-[1px] overflow-hidden h-[200px] mb-4">
         <img
           src={imagePath}
@@ -25,7 +25,7 @@ export const StyledWorkPaper = ({
       </div>
       <div className=" flex justify-between items-center">
         <div className=" flex justify-start gap-2 items-center">
-          <StyledParagraph text={DEMO} className="text-gray-700" />
+          <StyledParagraph text={DEMO} className="text-gray-700 text-sm" />
           <p>
             <BsArrowRightShort className=" text-gray-700 text-lg" />
           </p>

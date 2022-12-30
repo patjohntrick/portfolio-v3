@@ -4,5 +4,5 @@ type StyledParagraphProps = {
 };
 
 export const StyledParagraph = ({ text, className }: StyledParagraphProps) => {
-  return <p className={` text-black/60 text-lg ${className}`}>{text}</p>;
+  return <p className={` text-[#757575] text-lg ${className}`}>{text}</p>;
 };
