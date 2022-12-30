@@ -4,5 +4,5 @@ type StyledSubTitleProps = {
 };
 
 export const StyledSubTitle = ({ text, className }: StyledSubTitleProps) => {
-  return <p className={`text-lg text-gray-700 ${className}`}>{text}</p>;
+  return <p className={`text-lg text-black/60 ${className}`}>{text}</p>;
 };

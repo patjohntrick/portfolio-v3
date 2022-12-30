@@ -6,3 +6,5 @@ export { StyledSection } from "./StyledSection";
 export { StyledTitle } from "./StyledTitle";
 export { StyledSubTitle } from "./StyledSubTitle";
 export { StyledSectionTitle } from "./StyledSectionTitle";
+export { StyledPaper } from "./StyledPaper";
+export { StyledPicContainer } from "./StyledPicContainer";

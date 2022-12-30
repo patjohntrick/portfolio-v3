@@ -5,6 +5,8 @@ type StyledSectionProps = {
 
 export const StyledSection = ({ children, className }: StyledSectionProps) => {
   return (
-    <div className={` max-w-[800px] m-auto pb-6 ${className}`}>{children}</div>
+    <div className={` max-w-[800px] m-auto pb-6 px-6 ${className}`}>
+      {children}
+    </div>
   );
 };

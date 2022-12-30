@@ -1,5 +1,8 @@
+import { StyledSubTitle } from "./StyledSubTitle";
+import { StyledTitle } from "./StyledTitle";
+
 type StyledSectionTitleProps = {
-  title?: string;
+  title: string;
   subTitle: string;
 };
 
@@ -8,9 +11,12 @@ export const StyledSectionTitle = ({
   subTitle,
 }: StyledSectionTitleProps) => {
   return (
-    <div className="text-center">
-      <p className="text-2xl font-semibold text-gray-800">{title}</p>
-      <p className="text-black/60">{subTitle}</p>
+    <div className="text-center mb-12">
+      <StyledTitle
+        text={title}
+        className="text-2xl font-semibold text-gray-800"
+      />
+      <StyledSubTitle text={subTitle} className="text-black/60" />
     </div>
   );
 };
