@@ -10,7 +10,7 @@ const { NAME, JOB, BANNER_DESCRIPTION } = Strings;
 
 export const BannerSection = () => {
   return (
-    <div className="relative h-[90vh]">
+    <div className="relative h-[90vh] max-w-[400px] m-auto">
       <StyledSection className=" absolute top-[40%] translate-y-[-40%] p-4">
         <div>
           <div>

@@ -10,7 +10,7 @@ export const StyledNavigation = ({
   toggleAction,
 }: StyledNavigationProps) => {
   return (
-    <nav className=" h-[10vh] flex justify-between items-center px-4">
+    <nav className=" h-[10vh] max-w-[400px] m-auto flex justify-between items-center px-4">
       <div>
         <p className="text-3xl text-stone-700 font-semibold">Pat.</p>
       </div>
