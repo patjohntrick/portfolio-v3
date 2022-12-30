@@ -43,6 +43,11 @@ export const Messages = {
   CANVA: "Canva",
   FIGMA: "Figma",
   PHOTOSHOP: "Photoshop",
+
+  // work info
+  WORKS: "Works",
+  PERSONAL_PROJECTS: "Personal Projects",
+  DEMO: "Demo",
 };
 
 export const FRONT_END = [

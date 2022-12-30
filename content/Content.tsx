@@ -3,6 +3,7 @@ import { StyledNavigation } from "../components";
 import { AboutSection } from "./AboutSection";
 import { BannerSection } from "./BannerSection";
 import { SkillsSection } from "./SkillsSection";
+import { WorkSection } from "./WorkSection";
 
 export const Content = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,6 +18,7 @@ export const Content = () => {
       <BannerSection />
       <AboutSection />
       <SkillsSection />
+      <WorkSection />
     </div>
   );
 };
