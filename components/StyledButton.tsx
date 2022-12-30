@@ -9,7 +9,7 @@ type StyledButtonProps = {
 export const StyledButton = ({ buttonIcon, buttonText }: StyledButtonProps) => {
   return (
     <div
-      className={` bg-gray-800 py-4 px-2 cursor-pointer text-white shadow-md rounded-xl lg:w-[200px] ${
+      className={` bg-[#333333] py-4 px-2 cursor-pointer text-white shadow-md rounded-xl lg:w-[200px] ${
         buttonIcon !== undefined
           ? "flex justify-center gap-2 items-center"
           : undefined
