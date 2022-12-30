@@ -8,3 +8,4 @@ export { StyledSubTitle } from "./StyledSubTitle";
 export { StyledSectionTitle } from "./StyledSectionTitle";
 export { StyledPaper } from "./StyledPaper";
 export { StyledPicContainer } from "./StyledPicContainer";
+export { StyledSkillPaper } from "./StyledSkillPaper";

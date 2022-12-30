@@ -1,4 +1,4 @@
-export const Strings = {
+export const Messages = {
   // button text
   SAY_HELLO: "Say hello",
   CV: "Download CV",
@@ -20,4 +20,111 @@ export const Strings = {
   FOCUS: "Focus",
   PASSIONATE: "Passionate",
   TECH_SAVVY: "Tech-savvy",
+
+  // skills info
+  SKILL: "Skill",
+  TECHNOLOGIES: "Technologies that I use",
+  FRONT_END: "Front End",
+  HTML: "HTML",
+  CSS: "CSS",
+  JAVASCRIPT: "Javascript",
+  TAILWIND: "Tailwind",
+  REACT_NEXT: "Reactjs/Nextjs",
+  BACKEND: "Backend",
+  EXPRESS: "ExpressJS",
+  NEST: "NestJS",
+  POSTGRES: "PostgreSQL",
+  MONGO: "MongoDB",
+  FIREBASE: "Firebase",
+  // other tools
+  GIT: "Git",
+  GITHUB: "Github/Bitbucket",
+  POSTMAN: "Postman",
+  CANVA: "Canva",
+  FIGMA: "Figma",
+  PHOTOSHOP: "Photoshop",
+};
+
+export const FRONT_END = [
+  {
+    skill: "HTML",
+    level: "Intermediate",
+  },
+  {
+    skill: "CSS",
+    level: "Intermediate",
+  },
+  {
+    skill: "Javascript/Typescript",
+    level: "Basic",
+  },
+  {
+    skill: "Tailwind",
+    level: "Intermediate",
+  },
+  {
+    skill: "ReactJS/NextJS",
+    level: "Basic",
+  },
+];
+
+export const BACK_END = [
+  {
+    skill: "Javascript/Typescript",
+    level: "Basic",
+  },
+  {
+    skill: "ExpressJS",
+    level: "Basic",
+  },
+  {
+    skill: "NestJS",
+    level: "Basic",
+  },
+  {
+    skill: "PostgreSQL",
+    level: "Basic",
+  },
+  {
+    skill: "MongoDB",
+    level: "Basic",
+  },
+  {
+    skill: "Firebase",
+    level: "Basic",
+  },
+];
+
+export const OTHER_TOOLS = [
+  {
+    skill: "Git",
+    level: "Intermediate",
+  },
+  {
+    skill: "Github/Bitbucket",
+    level: "Intermediate",
+  },
+  {
+    skill: "Postman",
+    level: "Intermediate",
+  },
+  {
+    skill: "Canva",
+    level: "Basic",
+  },
+  {
+    skill: "Figma",
+    level: "Basic",
+  },
+  {
+    skill: "PhotoShop",
+    level: "Basic",
+  },
+];
+
+export const Strings = {
+  ...Messages,
+  FRONT_END,
+  BACK_END,
+  OTHER_TOOLS,
 };

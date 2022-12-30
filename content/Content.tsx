@@ -2,6 +2,7 @@ import { useState } from "react";
 import { StyledNavigation } from "../components";
 import { AboutSection } from "./AboutSection";
 import { BannerSection } from "./BannerSection";
+import { SkillsSection } from "./SkillsSection";
 
 export const Content = () => {
   const [toggle, setToggle] = useState(false);
@@ -15,6 +16,7 @@ export const Content = () => {
       <StyledNavigation toggleStatus={toggle} toggleAction={handleToggle} />
       <BannerSection />
       <AboutSection />
+      <SkillsSection />
     </div>
   );
 };
