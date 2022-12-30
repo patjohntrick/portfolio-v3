@@ -20,7 +20,7 @@ export const StyledSkillPaper = ({ skills, title }: StyledSkillsPaperProps) => {
       />
       <div>
         {skills.map((value, index) => (
-          <div key={index} className="flex items-start gap-2 mb-8">
+          <div key={index} className="flex items-start gap-2 mb-6">
             <BsPatchCheckFill className="mt-[7px] text-sm text-gray-700" />
             <div>
               <p className="mb-2">{value.skill}</p>
