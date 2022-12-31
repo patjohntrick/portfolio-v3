@@ -16,7 +16,7 @@ export const StyledSectionTitle = ({
         text={title}
         className="text-2xl font-semibold text-[#333333]"
       />
-      <StyledSubTitle text={subTitle} className="text-black/60" />
+      <StyledSubTitle text={subTitle} className="text-black/60 text-base" />
     </div>
   );
 };

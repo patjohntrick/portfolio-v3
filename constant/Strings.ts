@@ -46,7 +46,7 @@ export const Messages = {
 
   // work info
   WORKS: "Works",
-  PERSONAL_PROJECTS: "Personal Projects",
+  PERSONAL_PROJECTS: "Personal projects",
   DEMO: "Demo",
 };
 

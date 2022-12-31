@@ -20,10 +20,10 @@ export const StyledSkillPaper = ({ skills, title }: StyledSkillsPaperProps) => {
       />
       <div className=" lg:grid lg:grid-rows-3 lg:grid-flow-col gap-4">
         {skills.map((value, index) => (
-          <div key={index} className="flex items-start gap-2 mb-4">
+          <div key={index} className="flex items-start gap-2 mb-4 lg:mb-2">
             <BsPatchCheckFill className="mt-[6px] text-sm text-gray-700" />
             <div>
-              <p className="mb-2">{value.skill}</p>
+              <p className="mb-1">{value.skill}</p>
               {value.level && (
                 <p className="text-black/60 text-sm">{value.level}</p>
               )}
