@@ -5,6 +5,7 @@ import { AboutSection } from "./AboutSection";
 import { BannerSection } from "./BannerSection";
 import { SkillsSection } from "./SkillsSection";
 import { WorkSection } from "./WorkSection";
+import { ContactSection } from "./ContactSection";
 
 export const Content = () => {
   const [toggle, setToggle] = useState(false);
@@ -13,6 +14,7 @@ export const Content = () => {
     setToggle(!toggle);
     console.log(toggle);
   };
+
   return (
     <div className="  bg-[#FAFAFA]">
       <Head>
@@ -24,6 +26,7 @@ export const Content = () => {
       <AboutSection />
       <SkillsSection />
       <WorkSection />
+      <ContactSection />
     </div>
   );
 };

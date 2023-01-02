@@ -10,3 +10,4 @@ export { StyledPaper } from "./StyledPaper";
 export { StyledPicContainer } from "./StyledPicContainer";
 export { StyledSkillPaper } from "./StyledSkillPaper";
 export { StyledImage } from "./StyledImage";
+export { StyledForm } from "./StyledForm";

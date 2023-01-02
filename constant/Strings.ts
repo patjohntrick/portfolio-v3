@@ -48,6 +48,20 @@ export const Messages = {
   WORKS: "Works",
   PERSONAL_PROJECTS: "Personal projects",
   DEMO: "Demo",
+
+  // contact info
+  CONTACT: "Contact Me",
+  GET_IN_TOUCH: "Get in touch",
+  SEND_A_MESSAGE: "Send a message",
+  USER_NAME: "Name",
+  EMAIL: "Email",
+  MESSAGE: "Message",
+  ENTER_NAME: "Enter your name",
+  ENTER_EMAIL: "Enter your email",
+  ENTER_MESSAGE: "Enter your message",
+  REQUIRED_NAME: "Name is required",
+  REQUIRED_EMAIL: "Email is required",
+  REQUIRED_MESSAGE: "Message is required",
 };
 
 export const FRONT_END = [
