@@ -7,9 +7,7 @@ export const ContactSection = () => {
   return (
     <StyledSection>
       <StyledSectionTitle title={CONTACT} subTitle={GET_IN_TOUCH} />
-      <div className="">
-        <StyledForm />
-      </div>
+      <StyledForm />
     </StyledSection>
   );
 };

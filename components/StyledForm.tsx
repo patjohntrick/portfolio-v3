@@ -40,8 +40,11 @@ export const StyledForm = () => {
     message: Yup.string().required(REQUIRED_MESSAGE),
   });
   return (
-    <div className="">
-      <StyledParagraph text={SEND_A_MESSAGE} className="text-[#333333] mb-4" />
+    <div className="lg:max-w-[400px] lg:m-auto">
+      <StyledParagraph
+        text={SEND_A_MESSAGE}
+        className="text-[#333333] mb-6 text-xl text-center"
+      />
       <div className="">
         <Formik
           initialValues={{ name: "", email: "", message: "" }}
@@ -57,12 +60,14 @@ export const StyledForm = () => {
             errors,
           }) => (
             <>
-              <form onSubmit={submitForm} className="space-y-6">
+              <form onSubmit={submitForm} className=" space-y-6">
                 {/* name */}
                 <div className=" w-full relative">
                   <p
                     className={`text-xs py-1 px-1 absolute bg-[#FAFAFA] -top-3 left-3 ${
-                      touched.name && errors.name && "text-red-700"
+                      touched.name && errors.name
+                        ? "text-red-700"
+                        : "text-black/70"
                     }`}
                   >
                     {touched.name && errors.name ? errors.name : USER_NAME}
@@ -86,7 +91,9 @@ export const StyledForm = () => {
                 <div className=" w-full relative">
                   <p
                     className={`text-xs py-1 px-1 absolute bg-[#FAFAFA] -top-3 left-3 ${
-                      touched.email && errors.email && "text-red-700"
+                      touched.email && errors.email
+                        ? "text-red-700"
+                        : "text-black/70"
                     }`}
                   >
                     {touched.email && errors.email ? errors.email : EMAIL}
@@ -110,7 +117,9 @@ export const StyledForm = () => {
                 <div className=" w-full relative">
                   <p
                     className={`text-xs py-1 px-1 absolute bg-[#FAFAFA] -top-3 left-3 ${
-                      touched.message && errors.message && "text-red-700"
+                      touched.message && errors.message
+                        ? "text-red-700"
+                        : "text-black/70"
                     }`}
                   >
                     {touched.message && errors.message
@@ -154,11 +163,11 @@ export const StyledForm = () => {
                 />
                 {touched && errors && <p>{errors.message}</p>}
               </div> */}
-                <input type="submit" value="Submit" />
-                {/* <StyledButton
-                buttonText={SEND_A_MESSAGE}
-                buttonIcon={<TbSend />}
-              /> */}
+                {/* <input type="submit" value="Submit" /> */}
+                <StyledButton
+                  buttonText={SEND_A_MESSAGE}
+                  buttonIcon={<TbSend />}
+                />
               </form>
             </>
           )}
