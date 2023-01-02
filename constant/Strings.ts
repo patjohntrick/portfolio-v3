@@ -52,7 +52,7 @@ export const Messages = {
   // contact info
   CONTACT: "Contact Me",
   GET_IN_TOUCH: "Get in touch",
-  SEND_A_MESSAGE: "Send a message",
+  SEND_A_MESSAGE: "Send message",
   USER_NAME: "Name",
   EMAIL: "Email",
   MESSAGE: "Message",

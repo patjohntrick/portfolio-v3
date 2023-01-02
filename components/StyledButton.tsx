@@ -1,14 +1,21 @@
 import React from "react";
 
 type StyledButtonProps = {
-  buttonText?: string;
+  buttonText: string;
   buttonIcon?: any;
   buttonWidth?: string;
   type?: string;
   onClick?: any;
+  isLink?: boolean;
 };
 
-export const StyledButton = ({ buttonIcon, buttonText }: StyledButtonProps) => {
+export const StyledButton = ({
+  buttonIcon,
+  buttonText,
+  type,
+  onClick,
+  isLink,
+}: StyledButtonProps) => {
   return (
     <div
       className={` bg-black/90 py-4 px-2 cursor-pointer text-white shadow-md rounded-xl lg:w-[200px] ${

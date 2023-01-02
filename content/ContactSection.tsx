@@ -7,7 +7,7 @@ export const ContactSection = () => {
   return (
     <StyledSection>
       <StyledSectionTitle title={CONTACT} subTitle={GET_IN_TOUCH} />
-      <div className="grid place-content-center">
+      <div className="">
         <StyledForm />
       </div>
     </StyledSection>

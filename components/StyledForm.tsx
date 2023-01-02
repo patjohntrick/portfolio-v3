@@ -6,6 +6,7 @@ import { StyledParagraph } from "./StyledParagraph";
 import { StyledField } from "./StyledField";
 import { StyledButton } from "./StyledButton";
 import { TbSend } from "react-icons/tb";
+import { StyledSection } from "./StyledSection";
 
 interface FormProps {
   name: string;
@@ -31,15 +32,17 @@ export const StyledForm = () => {
     console.log(values);
   };
 
+  const fieldStyle = "";
+
   const formSchema = Yup.object().shape({
     name: Yup.string().required(REQUIRED_NAME),
     email: Yup.string().required(REQUIRED_EMAIL),
     message: Yup.string().required(REQUIRED_MESSAGE),
   });
   return (
-    <div>
-      <StyledParagraph text={SEND_A_MESSAGE} className="text-gray-700" />
-      <div>
+    <div className="">
+      <StyledParagraph text={SEND_A_MESSAGE} className="text-[#333333] mb-4" />
+      <div className="">
         <Formik
           initialValues={{ name: "", email: "", message: "" }}
           validationSchema={formSchema}
@@ -52,28 +55,112 @@ export const StyledForm = () => {
             touched,
             values,
             errors,
-            isValid,
-            setFieldValue,
-            // handleSubmit,
           }) => (
-            <form onSubmit={submitForm}>
-              <div>
+            <>
+              <form onSubmit={submitForm} className="space-y-6">
+                {/* name */}
+                <div className=" w-full relative">
+                  <p
+                    className={`text-xs py-1 px-1 absolute bg-[#FAFAFA] -top-3 left-3 ${
+                      touched.name && errors.name && "text-red-700"
+                    }`}
+                  >
+                    {touched.name && errors.name ? errors.name : USER_NAME}
+                  </p>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    value={values.name}
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    placeholder={ENTER_NAME}
+                    className={`border-[1px] rounded-lg p-4 outline-none focus:border-black/60 w-full ${
+                      touched.name &&
+                      errors.name &&
+                      "border-red-700 focus:border-red-700"
+                    }`}
+                  />
+                </div>
+                {/* email */}
+                <div className=" w-full relative">
+                  <p
+                    className={`text-xs py-1 px-1 absolute bg-[#FAFAFA] -top-3 left-3 ${
+                      touched.email && errors.email && "text-red-700"
+                    }`}
+                  >
+                    {touched.email && errors.email ? errors.email : EMAIL}
+                  </p>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    value={values.email}
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    placeholder={ENTER_EMAIL}
+                    className={`border-[1px] rounded-lg p-4 outline-none focus:border-black/60 w-full ${
+                      touched.email &&
+                      errors.email &&
+                      "border-red-700 focus:border-red-700"
+                    }`}
+                  />
+                </div>
+                {/* message */}
+                <div className=" w-full relative">
+                  <p
+                    className={`text-xs py-1 px-1 absolute bg-[#FAFAFA] -top-3 left-3 ${
+                      touched.message && errors.message && "text-red-700"
+                    }`}
+                  >
+                    {touched.message && errors.message
+                      ? errors.message
+                      : ENTER_MESSAGE}
+                  </p>
+                  <textarea
+                    rows={4}
+                    name="message"
+                    id="message"
+                    value={values.message}
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    placeholder={ENTER_MESSAGE}
+                    className={`border-[1px] rounded-lg p-4 outline-none focus:border-black/60 w-full ${
+                      touched.message &&
+                      errors.message &&
+                      "border-red-700 focus:border-red-700"
+                    }`}
+                  />
+                </div>
+                {/* <div>
                 <input
                   type="text"
-                  name="name"
-                  value={values.name}
+                  name="email"
+                  id="email"
+                  value={values.email}
                   onBlur={handleBlur}
                   onChange={handleChange}
                 />
+                {touched && errors && <p>{errors.email}</p>}
               </div>
-              {touched && errors && <p>{errors.name}</p>}
-              {/* <StyledButton
+              <div>
+                <textarea
+                  rows={4}
+                  name="message"
+                  id="message"
+                  value={values.message}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                />
+                {touched && errors && <p>{errors.message}</p>}
+              </div> */}
+                <input type="submit" value="Submit" />
+                {/* <StyledButton
                 buttonText={SEND_A_MESSAGE}
                 buttonIcon={<TbSend />}
-                type="submit"
-                onClick={submitForm}
               /> */}
-            </form>
+              </form>
+            </>
           )}
         </Formik>
       </div>
