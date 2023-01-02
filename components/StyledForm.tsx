@@ -73,7 +73,6 @@ export const StyledForm = () => {
                 type="submit"
                 onClick={submitForm}
               /> */}
-              <input type="submit" value="submit" />
             </form>
           )}
         </Formik>
