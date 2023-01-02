@@ -134,7 +134,7 @@ export const StyledForm = () => {
                     onBlur={handleBlur}
                     onChange={handleChange}
                     placeholder={ENTER_MESSAGE}
-                    className={`border-[1px] rounded-lg p-4 outline-none focus:border-black/60 w-full ${
+                    className={`border-[1px] rounded-lg p-4 outline-none focus:border-black/60 w-full -mb-2 ${
                       touched.message &&
                       errors.message &&
                       "border-red-700 focus:border-red-700"
