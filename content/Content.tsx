@@ -6,6 +6,7 @@ import { BannerSection } from './BannerSection';
 import { SkillsSection } from './SkillsSection';
 import { WorkSection } from './WorkSection';
 import { ContactSection } from './ContactSection';
+import { Footer } from './Footer';
 
 export const Content = () => {
   const [toggle, setToggle] = useState(false);
@@ -27,6 +28,7 @@ export const Content = () => {
       <SkillsSection />
       <WorkSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 };

@@ -22,7 +22,7 @@ export const BannerSection = () => {
             <div className='flex justify-start items-center gap-2'>
               <StyledTitle
                 text={NAME}
-                className='text-4xl font-medium lg:text-6xl'
+                className='text-4xl font-medium lg:text-5xl'
               />
               <GiHand className='text-yellow-400 text-4xl lg:text-5xl' />
             </div>
@@ -30,7 +30,7 @@ export const BannerSection = () => {
               <div className='bg-stone-400 h-[1px] w-[70px] hidden md:block'></div>
               <StyledSubTitle
                 text={JOB}
-                className='my-4 text-lg text-gray-700'
+                className='my-4 text-base text-gray-700 font-medium'
               />
             </div>
             <StyledParagraph text={BANNER_DESCRIPTION} className='mb-6' />
