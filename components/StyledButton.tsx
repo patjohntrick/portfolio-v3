@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type StyledButtonProps = {
   buttonText: string;
@@ -20,11 +20,11 @@ export const StyledButton = ({
     <div
       className={` bg-black/90 py-4 px-2 cursor-pointer text-white shadow-md rounded-xl lg:w-[200px] ${
         buttonIcon !== undefined
-          ? "flex justify-center gap-2 items-center"
+          ? 'flex justify-center gap-2 items-center'
           : undefined
       }`}
     >
-      <p className="text-center text-gray-200 font-semibold ">{buttonText}</p>
+      <p className='text-center text-gray-200 font-semibold '>{buttonText}</p>
       {buttonIcon !== undefined ? buttonIcon : undefined}
     </div>
   );

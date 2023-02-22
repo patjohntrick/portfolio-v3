@@ -8,7 +8,7 @@ export const StyledImage = ({ imagePath, imageAlt }: StyledImageProps) => {
     <img
       src={imagePath}
       alt={imageAlt}
-      className="w-full h-full object-cover rounded-xl"
+      className='w-full h-full object-cover rounded-xl'
     />
   );
 };

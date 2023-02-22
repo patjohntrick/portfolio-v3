@@ -1,5 +1,5 @@
-import { StyledTitle } from "./StyledTitle";
-import { FormikProps, FieldProps, FieldInputProps } from "formik";
+import { StyledTitle } from './StyledTitle';
+import { FormikProps, FieldProps, FieldInputProps } from 'formik';
 
 type StyledFieldProps = {
   fieldText: string;
@@ -20,7 +20,7 @@ export const StyledField = ({
   handleBlur,
   values,
 }: StyledFieldProps) => {
-  const fieldStyles = "rounded-md border-1px";
+  const fieldStyles = 'rounded-md border-1px';
 
   return (
     <div>
@@ -33,7 +33,7 @@ export const StyledField = ({
         />
       ) : (
         <input
-          type="text"
+          type='text'
           placeholder={fieldPlaceHolder}
           className={fieldStyles}
         />

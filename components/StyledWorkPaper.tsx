@@ -1,7 +1,7 @@
-import { BsArrowRightShort, BsGithub } from "react-icons/bs";
+import { BsArrowRightShort, BsGithub } from 'react-icons/bs';
 
-import { StyledParagraph } from "./StyledParagraph";
-import { Strings } from "../constant/Strings";
+import { StyledParagraph } from './StyledParagraph';
+import { Strings } from '../constant/Strings';
 
 const { DEMO } = Strings;
 
@@ -15,23 +15,23 @@ export const StyledWorkPaper = ({
   projectPath,
 }: StyledWorkPaperProps) => {
   return (
-    <div className=" border-[1px] bg-white rounded-xl p-4 w-full lg:w-[320px]">
-      <div className=" rounded-xl border-[1px] overflow-hidden h-[200px] mb-4">
+    <div className=' border-[1px] bg-white rounded-xl p-4 w-full lg:w-[320px]'>
+      <div className=' rounded-xl border-[1px] overflow-hidden h-[200px] mb-4'>
         <img
           src={imagePath}
-          alt="Project Image"
-          className=" w-full h-full object-cover"
+          alt='Project Image'
+          className=' w-full h-full object-cover'
         />
       </div>
-      <div className=" flex justify-between items-center">
-        <div className=" flex justify-start gap-2 items-center">
-          <StyledParagraph text={DEMO} className="text-gray-700 text-sm" />
+      <div className=' flex justify-between items-center'>
+        <div className=' flex justify-start gap-2 items-center'>
+          <StyledParagraph text={DEMO} className='text-gray-700 text-sm' />
           <p>
-            <BsArrowRightShort className=" text-gray-700 text-lg" />
+            <BsArrowRightShort className=' text-gray-700 text-lg' />
           </p>
         </div>
         <div>
-          <BsGithub className="text-gray-700 text-lg" />
+          <BsGithub className='text-gray-700 text-lg' />
         </div>
       </div>
     </div>

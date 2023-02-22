@@ -1,4 +1,4 @@
-import { Strings } from "../constant/Strings";
+import { Strings } from '../constant/Strings';
 
 const { NAME } = Strings;
 
@@ -15,7 +15,7 @@ export const StyledPicContainer = ({
     <div
       className={`border-[1px] h-[280px] w-full rounded-xl bg-white overflow-hidden ${className}`}
     >
-      <img src={imagePath} alt={NAME} className="object-cover h-full w-full" />
+      <img src={imagePath} alt={NAME} className='object-cover h-full w-full' />
     </div>
   );
 };
