@@ -1,4 +1,4 @@
-import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
+import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 
 type StyledNavigationProps = {
   toggleStatus?: boolean;
@@ -10,11 +10,11 @@ export const StyledNavigation = ({
   toggleAction,
 }: StyledNavigationProps) => {
   return (
-    <nav className=' h-[10vh] max-w-[400px] m-auto flex justify-between items-center px-4 lg:max-w-[900px]'>
+    <nav className=" h-[10vh] max-w-[400px] m-auto flex justify-between items-center px-4 lg:max-w-[900px]">
       <div>
-        <p className='text-3xl text-stone-700 font-semibold'>Pat.</p>
+        <p className="text-3xl text-stone-700 font-semibold">Pat.</p>
       </div>
-      <div
+      {/* <div
         className=' flex justify-center gap-2 items-center'
         onClick={toggleAction}
       >
@@ -27,7 +27,7 @@ export const StyledNavigation = ({
           ></div>
         </div>
         <BsFillMoonFill className=' text-blue-400 text-xl' />
-      </div>
+      </div> */}
     </nav>
   );
 };
