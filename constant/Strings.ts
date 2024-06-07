@@ -84,11 +84,15 @@ export const FRONT_END = [
     skill: "ReactJS/NextJS",
     level: "Basic",
   },
+  {
+    skill: "React Native",
+    level: "Basic",
+  },
 ];
 
 export const BACK_END = [
   {
-    skill: "Javascript/Typescript",
+    skill: "Javascript | Typescript",
     level: "Basic",
   },
   {
@@ -119,7 +123,7 @@ export const OTHER_TOOLS = [
     level: "Intermediate",
   },
   {
-    skill: "Github/Bitbucket",
+    skill: "Github | GitLab | Bitbucket",
     level: "Intermediate",
   },
   {
@@ -127,11 +131,11 @@ export const OTHER_TOOLS = [
     level: "Intermediate",
   },
   {
-    skill: "Canva",
+    skill: "Socket IO",
     level: "Basic",
   },
   {
-    skill: "Figma",
+    skill: "Figma | Sketch",
     level: "Basic",
   },
   {
