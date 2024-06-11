@@ -1,6 +1,7 @@
 import { StyledSection, StyledSectionTitle } from "../components";
 import { StyledWorkPaper } from "../components/StyledWorkPaper";
 import Qwote from "../assets/qwote-brand-logo.svg";
+import QwoteVendor from "../assets/qwote-vendor-logo.svg";
 import PSSLAI from "../assets/psslai-logo.svg";
 import SafeTel from "../assets/safe-tel.svg";
 
@@ -43,7 +44,10 @@ export const WorkSection = () => {
   ];
   return (
     <StyledSection>
-      <StyledSectionTitle title={WORKS} subTitle="Projects" />
+      <StyledSectionTitle
+        title={WORKS}
+        subTitle="Projects on which I worked with"
+      />
       <div className=" flex flex-wrap gap-6 lg:grid lg:grid-rows-2 lg:grid-flow-col lg:place-content-center">
         <StyledWorkPaper
           imagePath={Qwote.src}
@@ -58,7 +62,7 @@ export const WorkSection = () => {
           projectPath="https://bilisonline.psslai.com/"
         />
         <StyledWorkPaper
-          imagePath={Qwote.src}
+          imagePath={QwoteVendor.src}
           projectTitle="Qwote Vendor App"
           projectTechnology={qwoteTechsVendor}
           projectPath="https://fhc-vendor.qwote.ph/"

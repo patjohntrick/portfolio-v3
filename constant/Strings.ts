@@ -21,7 +21,7 @@ export const Messages = {
   TECH_SAVVY: "Tech-savvy",
 
   // skills info
-  SKILL: "Skill",
+  SKILL: "Skills",
   TECHNOLOGIES: "Technologies that I use",
   FRONT_END: "Front End",
   HTML: "HTML",
@@ -65,11 +65,7 @@ export const Messages = {
 
 export const FRONT_END = [
   {
-    skill: "HTML",
-    level: "Intermediate",
-  },
-  {
-    skill: "CSS",
+    skill: "HTML | CSS",
     level: "Intermediate",
   },
   {
@@ -88,11 +84,14 @@ export const FRONT_END = [
     skill: "React Native",
     level: "Basic",
   },
+  {
+    skill: "Dart/Flutter(Learning)",
+  },
 ];
 
 export const BACK_END = [
   {
-    skill: "Javascript | Typescript",
+    skill: "Javascript/Typescript",
     level: "Basic",
   },
   {
@@ -123,7 +122,7 @@ export const OTHER_TOOLS = [
     level: "Intermediate",
   },
   {
-    skill: "Github | GitLab | Bitbucket",
+    skill: "Github/GitLab/Bitbucket",
     level: "Intermediate",
   },
   {
@@ -135,13 +134,13 @@ export const OTHER_TOOLS = [
     level: "Basic",
   },
   {
-    skill: "Figma | Sketch",
+    skill: "Figma/Sketch",
     level: "Basic",
   },
-  {
-    skill: "PhotoShop",
-    level: "Basic",
-  },
+  // {
+  //   skill: "PhotoShop",
+  //   level: "Basic",
+  // },
 ];
 
 export const Strings = {

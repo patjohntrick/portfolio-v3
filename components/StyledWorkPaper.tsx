@@ -29,7 +29,7 @@ export const StyledWorkPaper = ({
         router.push(projectPath);
       }}
     >
-      <div className=" rounded-xl border-[1px] overflow-hidden h-[200px] mb-4 p-4 bg-slate-50">
+      <div className=" rounded-xl border-[1px] overflow-hidden h-[200px] mb-4 p-8 bg-slate-50">
         <img
           src={imagePath}
           alt="Project Image"
