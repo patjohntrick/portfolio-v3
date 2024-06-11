@@ -25,7 +25,7 @@ export const AboutSection = () => {
       <StyledButton
         buttonText={CV}
         buttonIcon={<CgFileDocument />}
-        download="../asssets/John_Patrick_Resurreccion.pdf"
+        download="/John_Patrick_Resurreccion.pdf"
       />
     </StyledSection>
   );
