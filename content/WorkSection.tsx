@@ -16,6 +16,7 @@ export const WorkSection = () => {
     "Redux Toolkit",
     "Mantine UI",
     "REST API",
+    "NextAuth",
     "Admin Dashboard",
   ];
   const qwoteTechsVendor = [
@@ -24,10 +25,13 @@ export const WorkSection = () => {
     "Redux Toolkit",
     "Mantine UI",
     "REST API",
+    "NextAuth",
     "Vendor Dashboard",
   ];
   const psslaiTech = [
     "Javascript",
+    "ReactJS",
+    "Redux",
     "Axios",
     "Ant Design",
     "REST API",
@@ -40,6 +44,7 @@ export const WorkSection = () => {
     "Redux Toolkit",
     "Ant Design",
     "REST API",
+    "DocuSign",
     "react-i18next",
   ];
   return (
