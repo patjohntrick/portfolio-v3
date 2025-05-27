@@ -1,13 +1,15 @@
-import { StyledForm, StyledSection, StyledSectionTitle } from '../components';
-import { Strings } from '../constant/Strings';
+import { StyledForm, StyledSection, StyledSectionTitle } from "../components";
+import { Strings } from "../constant/Strings";
 
 const { CONTACT, GET_IN_TOUCH } = Strings;
 
 export const ContactSection = () => {
   return (
     <StyledSection>
-      <StyledSectionTitle title={CONTACT} subTitle={GET_IN_TOUCH} />
-      <StyledForm />
+      <div id="contact">
+        <StyledSectionTitle title={CONTACT} subTitle={GET_IN_TOUCH} />
+        <StyledForm />
+      </div>
     </StyledSection>
   );
 };

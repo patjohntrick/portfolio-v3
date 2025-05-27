@@ -43,7 +43,9 @@ export const StyledButton = ({
           : undefined
       }`}
     >
-      <p className="text-center text-gray-200 font-semibold ">{buttonText}</p>
+      <a className="text-center text-gray-200 font-semibold " href="#contact">
+        {buttonText}
+      </a>
       {buttonIcon !== undefined ? buttonIcon : undefined}
     </div>
   );

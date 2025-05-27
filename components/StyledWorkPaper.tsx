@@ -36,7 +36,11 @@ export const StyledWorkPaper = ({
           className=" w-full h-full object-contain"
         />
       </div>
-      <StyledParagraph text={projectTitle} className="mb-2" />
+      <StyledParagraph
+        text={projectTitle}
+        className="mb-3 font-semibold text-lg"
+      />
+      {/* <StyledParagraph text="Technologies used:" className="mb-2 text-xl" /> */}
       <div className="flex flex-wrap">
         {projectTechnology.map((tech) => (
           <div
