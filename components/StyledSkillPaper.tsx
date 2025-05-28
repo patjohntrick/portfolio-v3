@@ -8,7 +8,7 @@ type SkillsProps = {
 
 type StyledSkillsPaperProps = {
   skills: SkillsProps[];
-  title: any;
+  title: string;
 };
 
 export const StyledSkillPaper = ({ skills, title }: StyledSkillsPaperProps) => {
@@ -16,7 +16,7 @@ export const StyledSkillPaper = ({ skills, title }: StyledSkillsPaperProps) => {
     <div className=" bg-white border-[1px] rounded-xl p-4 w-full lg:w-[400px] lg:px-6 pb-6">
       <StyledParagraph
         text={title}
-        className=" text-center text-lg mb-6 text-[#333333] mt-4"
+        className=" text-center text-lg mb-6 mt-4 font-medium text-[#333333]"
       />
       <div className=" lg:grid lg:grid-rows-3 lg:grid-flow-col gap-4">
         {skills.map((value, index) => (
